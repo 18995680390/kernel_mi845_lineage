@@ -916,7 +916,8 @@ static int show_smap(struct seq_file *m, void *v, int is_pid)
 				"KernelPageSize: %8lu kB\n"
 				"MMUPageSize:    %8lu kB\n",
 				(vma->vm_end - vma->vm_start) >> 10,
-				4, 4);
+				vma_kernel_pagesize(vma) >> 10,
+				vma_mmu_pagesize(vma) >> 10);
 			goto bypass_orig_flow;
 		}
 #endif
