@@ -54,9 +54,6 @@ config ANDROID_BINDER_IPC_SELFTEST
 	  exhaustively with combinations of various buffer sizes and
 	  alignments.
 
-config REKERNEL
-	bool "Re:Kernel"
-
 config ANDROID_DEBUG_SYMBOLS
 	bool "Android Debug Symbols"
 	help
